@@ -21,5 +21,10 @@ import android.os.Bundle;
             startActivity(Intent);
         }
 
+        public void register(android.view.View view){
+            Intent Intent = new Intent (this, Register.class);
+            startActivity(Intent);
+        }
+
 
     }
