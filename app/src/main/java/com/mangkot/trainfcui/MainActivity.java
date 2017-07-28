@@ -26,5 +26,10 @@ import android.os.Bundle;
             startActivity(Intent);
         }
 
+        public void forget(android.view.View view){
+            Intent Intent = new Intent(this, ForgetPass.class);
+            startActivity(Intent);
+        }
+
 
     }

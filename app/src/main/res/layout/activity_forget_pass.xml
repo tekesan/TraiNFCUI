@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/register_main"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true" >
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true" />
+
+    <ScrollView
+        android:id="@+id/ScrollView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/view"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/registration_background"
+        android:padding="25dp" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/member_login_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="40dp"
+                android:text="Poho Password"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:typeface="monospace" />
+
+            <EditText
+                android:id="@+id/email_edtext"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/member_login_tv"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/register_uname"
+                android:gravity="center"
+                android:hint="your email"
+                android:inputType="textEmailAddress"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+            <!--  <EditText
+                 android:id="@+id/passwd_edtext"
+                 android:layout_width="fill_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_below="@+id/username_edtext"
+                 android:layout_centerHorizontal="true"
+                 android:layout_marginTop="25dp"
+                 android:background="@drawable/register_password"
+                 android:gravity="center"
+                 android:hint="**************"
+                 android:inputType="textPassword"
+                 android:textColor="#000000"
+                 android:textStyle="bold" /> -->
+
+            <Button
+                android:id="@+id/login_button"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/email_edtext"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/register_button"
+                android:text="SEND"
+                android:onClick="forget"
+                android:textColor="#ffffff"
+                android:textSize="20dp" />
+
+            <!--   <TextView
+                  android:id="@+id/tv_2"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_below="@+id/login_button"
+                  android:layout_centerHorizontal="true"
+                  android:layout_marginTop="30dp"
+                  android:text="Forgot Password?"
+                  android:textSize="15dp"
+                  android:textStyle="bold"
+                  android:typeface="monospace" /> -->
+        </RelativeLayout>
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/view_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/member_imview" />
+
+</RelativeLayout>

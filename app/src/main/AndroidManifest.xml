@@ -20,7 +20,8 @@
         </activity>
         <activity android:name=".Home" />
         <activity android:name=".Tap" />
-        <activity android:name=".Register"></activity>
+        <activity android:name=".Register" />
+        <activity android:name=".ForgetPass"></activity>
     </application>
 
 </manifest>
